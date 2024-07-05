@@ -48,10 +48,10 @@
 <div class="container mt-4">
     <div class="row">
         <div class="col-md-8">
-   <h2>About My Project</h2>
+   <h2 class="text-secondary border-bottom border-black border-3">About My Project</h2>
 <p>Welcome to my project! My goal is to showcase the robust capabilities of Java Servlets, JSP (JavaServer Pages), and MySQL in building dynamic web applications. Leveraging these technologies, I have implemented a comprehensive CRUD (Create, Read, Update, Delete) system.</p>
 
-<table class="table table-striped">
+<table class="table table-striped border border-black border-3">
     <thead>
         <tr>
             <th>Technology</th>
