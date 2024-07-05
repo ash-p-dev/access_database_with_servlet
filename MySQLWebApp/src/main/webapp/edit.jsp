@@ -63,20 +63,23 @@
     <div class="container mt-4">
         <h2>Edit Record:</h2>
         <form action="UpdateServlet" method="post">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" class="form-control" value="<%= request.getAttribute("name") %>">
-            </div>
-            <div class="form-group">
-                <label for="address">Address:</label>
-                <input type="text" id="address" name="address" class="form-control" value="<%= request.getAttribute("address") %>">
-            </div>
-            <div class="form-group">
-                <label for="salary">Salary:</label>
-                <input type="text" id="salary" name="salary" class="form-control" value="<%= request.getAttribute("salary") %>">
-            </div>
-            <button type="submit" class="btn btn-primary">Update</button>
-        </form>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="form-control" value="<%= request.getAttribute("name") != null ? request.getAttribute("name") : "" %>">
+    </div>
+    <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" class="form-control" value="<%= request.getAttribute("address") != null ? request.getAttribute("address") : "" %>">
+    </div>
+    <div class="form-group">
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" name="salary" class="form-control" value="<%= request.getAttribute("salary") != null ? request.getAttribute("salary") : "" %>">
+    </div>
+    <!-- Include hidden input field for ID -->
+    <input type="hidden" id="id" name="id" value="<%= request.getParameter("id") %>">
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -87,4 +90,3 @@
     </footer>
 </body>
 </html>
-
