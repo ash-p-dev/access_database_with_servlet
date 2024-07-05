@@ -22,7 +22,7 @@
         }
     </style>
 </head>
-<body>
+<body class="">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.jsp">SQL App</a>
@@ -63,9 +63,9 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-8 offset-md-2 text-center">
-                <h1 class="display-4">Welcome to SQL App</h1>
-                <p class="lead">Explore the power of SQL with our application. Perform CRUD operations easily using Servlets, JSP, and MySQL.</p>
-                <a href="<%= request.getContextPath() %>/GetDataServlet" class="btn btn-primary btn-lg">Get Started</a>
+                <h1 class="display-4  border border-5 border-primary rounded-5 rounded-top-0 bg-black text-white">Welcome to SQL App</h1>
+                <p class=" lead shadow-lg border border-3 border-black border-top-0 rounded-5 rounded-top-0 bg-primary text-white">Explore the power of SQL with our application. Perform CRUD operations easily using Servlets, JSP, and MySQL.</p>
+                <a href="<%= request.getContextPath() %>/GetDataServlet" class="btn btn-outline-primary btn-lg">Get Started</a>
             </div>
         </div>
     </div>
